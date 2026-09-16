@@ -1,0 +1,41 @@
+.card {
+    border: 1px solid gray;
+    border-radius: 4px;
+    height: 350px;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover {
+    border: 1px solid rgb(13, 13, 217);
+    cursor: pointer;
+}
+
+.card-details {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    border: 1px solid grey;
+    padding: 4px;
+    border-radius: 20px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-details p {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-details p.price {
+    border: 1px solid grey;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(13, 13, 217);
+    font-weight:bold
+}

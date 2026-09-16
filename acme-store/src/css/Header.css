@@ -1,21 +1,42 @@
 .header-container {
-  position: fixed;
-  top: 0;          
-  left: 0;       
-  width: 100%;    
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    top: 0;          
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
 }
 
 .left-content {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
+
+.right-content {
+    text-align: right;
+}
+
+.left-content h3 {
+    text-align: left;
+}
+
 
 .links {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+.links p {
+    color: grey;
+}
+
+.links p:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .logo img {
@@ -31,9 +52,10 @@
 }
 
 .search-bar input{
-    padding: 5px;
+    padding: 8px;
     border-radius: 10px;
     color: white;
-    width: 130%;
-    border-color: white;
+    border: 1px solid white;
+    width: 80%;
+    margin-left: 40px;
 }
