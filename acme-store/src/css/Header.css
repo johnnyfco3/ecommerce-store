@@ -1,0 +1,39 @@
+.header-container {
+  position: fixed;
+  top: 0;          
+  left: 0;       
+  width: 100%;    
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+}
+
+.logo img {
+    max-width: 30px;
+    border-radius: 30px;
+}
+
+.cart img {
+    max-width: 35px;
+    cursor: pointer;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.search-bar input{
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    width: 130%;
+    border-color: white;
+}
