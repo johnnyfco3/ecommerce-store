@@ -4,15 +4,15 @@ import ProductGrid from '../components/ProductGrid'
 import Footer from '../components/Footer'
 import '../css/Home.css'
 
-const HomePage = () => {
+const HomePage = ( {products} ) => {
+  let first_four_products = Object.entries(products).slice(0,4)
+
   return (
-    <>
+    <div>
         <Header />
-        <div className="cards-section">
-            <ProductGrid />
-        </div>
+        <ProductGrid products={first_four_products}/>
         <Footer />
-    </>
+    </div>
   )
 }
 

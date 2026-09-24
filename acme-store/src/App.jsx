@@ -42,12 +42,14 @@ function App() {
   }, [])
 
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />}/>
-      <Route path="/all-products" element={<ProductsPage />}/>
-      <Route path="/shirts" element={<ShirtsPage />}/>
-      <Route path="/stickers" element={<StickersPage />}/>
-    </Routes>
+    <div className="container-fluid">
+      <Routes>
+        <Route path="/" element={<HomePage products={products} />}/>
+        <Route path="/all-products" element={<ProductsPage />}/>
+        <Route path="/shirts" element={<ShirtsPage />}/>
+        <Route path="/stickers" element={<StickersPage />}/>
+      </Routes>
+    </div>
   )
 }
 
